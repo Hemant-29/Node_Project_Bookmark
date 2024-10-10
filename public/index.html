@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmarks</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>The Bookmarks App</h1>
+    </header>
+    <main>
+      <div class="newBookmark">
+        <h3>Add Bookmark</h3>
+        <form class="bookmarkForm" id="addForm">
+          <input id="addWebsiteName" type="text" placeholder="Website Name" />
+          <input id="addWebsiteUrl" type="text" placeholder="URL" />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div class="allBookmarks">
+        <h3>List of bookmarks</h3>
+        <div class="bookmarksTable"></div>
+      </div>
+      <div class="editPopup">
+        <button onclick="closeEditPopup()" id="EditPopupClose">x</button>
+        <h3>Edit Bookmark</h3>
+        <form class="bookmarkForm" id="editForm">
+          <input id="editWebsiteName" type="text" placeholder="Website Name" />
+          <input id="editWebsiteUrl" type="text" placeholder="URL" />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+  </body>
+  <script src="./script.js"></script>
+</html>
