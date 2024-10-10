@@ -17,7 +17,7 @@ function closeEditPopup() {
 
 async function fetchBookmarks(params) {
     try {
-        const response = await fetch('http://localhost:5000/api/v1/bmarks')
+        const response = await fetch('https://node-project-bookmark.vercel.app/api/v1/bmarks')
         const bookmarkData = await response.json();
         console.log(bookmarkData);
         addToList(bookmarkData);
